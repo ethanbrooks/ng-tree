@@ -25,9 +25,11 @@ devDependencies:
   '@angular-devkit/build-optimizer': 0.803.23
   '@angular/cli': 8.3.23
   '@angular/compiler-cli': 8.2.14_9fe6dd87e3bf165a26efc58a047f1f30
+  '@angular/elements': 9.1.0_496fbbced1b992a41284b3329ac40a55
   '@angular/language-service': 8.2.14
   '@ngtools/webpack': 8.3.23_30ee6c1b5aea7c928f5e31ff3170fb95
   '@types/node': 13.1.7
+  '@webcomponents/webcomponentsjs': 2.4.3
   codelyzer: 5.2.1_55334123669ad0f700698d110d208e46
   http-server: 0.12.1
   postcss-loader: 3.0.0
@@ -262,7 +264,6 @@ packages:
       '@angular/core': 8.2.14_rxjs@6.5.4+zone.js@0.10.2
       rxjs: 6.5.4
       tslib: 1.10.0
-    dev: false
     peerDependencies:
       '@angular/core': 8.2.14
       rxjs: ^6.4.0
@@ -306,6 +307,20 @@ packages:
       zone.js: ~0.9.1
     resolution:
       integrity: sha512-zeePkigi+hPh3rN7yoNENG/YUBUsIvUXdxx+AZq+QPaFeKEA2FBSrKn36ojHFrdJUjKzl0lPMEiGC2b6a6bo6g==
+  /@angular/elements/9.1.0_496fbbced1b992a41284b3329ac40a55:
+    dependencies:
+      '@angular/core': 8.2.14_rxjs@6.5.4+zone.js@0.10.2
+      '@angular/platform-browser': 8.2.14_ecb0ad61817e3ede6ce462931a5e5041
+      rxjs: 6.5.4
+      tslib: 1.10.0
+    dev: true
+    peerDependencies:
+      '@angular/core': 9.1.0
+      '@angular/platform-browser': 9.1.0
+      rxjs: ^6.5.3
+      tslib: ^1.10.0
+    resolution:
+      integrity: sha512-jvMkhKP+8WOn6LWsEzCWaWVAB5HOKq9Hi6VDe6Z2DKR738ZFitG6wYh/w43EQOA9PnGh4f/HjEICS75qp8HQOg==
   /@angular/forms/8.2.14_e9fbe5720e9434eb9ae0f6720f1ca3f4:
     dependencies:
       '@angular/common': 8.2.14_@angular+core@8.2.14+rxjs@6.5.4
@@ -345,7 +360,6 @@ packages:
       '@angular/common': 8.2.14_@angular+core@8.2.14+rxjs@6.5.4
       '@angular/core': 8.2.14_rxjs@6.5.4+zone.js@0.10.2
       tslib: 1.10.0
-    dev: false
     peerDependencies:
       '@angular/common': 8.2.14
       '@angular/core': 8.2.14
@@ -1388,6 +1402,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-w0U0pD4EhlnvRyeJzBqaVSJAo9w/ce7/WPogeXLzGkO6hzhr4GnQIZ4W4uUt5b9ooAaXPtnXlj0gzsXEOUNYMg==
+  /@webcomponents/webcomponentsjs/2.4.3:
+    dev: true
+    resolution:
+      integrity: sha512-cV4+sAmshf8ysU2USutrSRYQkJzEYKHsRCGa0CkMElGpG5747VHtkfsW3NdVIBV/m2MDKXTDydT4lkrysH7IFA==
   /@xtuc/ieee754/1.2.0:
     dev: true
     resolution:
@@ -7773,6 +7791,7 @@ specifiers:
   '@angular/compiler': 8.2.14
   '@angular/compiler-cli': ^8.2.14
   '@angular/core': 8.2.14
+  '@angular/elements': ^9.1.0
   '@angular/forms': 8.2.14
   '@angular/language-service': 8.2.14
   '@angular/platform-browser': 8.2.14
@@ -7784,6 +7803,7 @@ specifiers:
   '@nguniversal/express-engine': ^8.2.6
   '@nguniversal/module-map-ngfactory-loader': ^8.2.6
   '@types/node': ^13.1.7
+  '@webcomponents/webcomponentsjs': ^2.4.3
   codelyzer: ^5.2.1
   core-js: 2.4.1
   devextreme: '19.2'
